@@ -1,0 +1,56 @@
+/* admin_goods的部分 */
+table {
+  width: 92%;
+  margin: 50px 0px;
+  border: solid 2px rgba(0, 0, 0, 0.404);
+}
+
+th,
+td,
+tr {
+  text-align: center;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+th {
+  background-color: rgba(253, 174, 55, 0.849);
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(255, 221, 212);
+}
+
+tr:nth-child(even) {
+  background-color: rgb(255, 241, 238);
+}
+
+input[type=submit]:hover,
+input[type=file]:hover {
+  cursor: pointer;
+}
+
+.admin_good {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin_good input[type=submit] {
+  padding: 10px 15px;
+  font-size: 14px;
+}
+
+.admin_good input[type=submit]:nth-child(even) {
+  margin-top: 30%;
+}
+
+.admin_good input[type=submit]:nth-child(odd) {
+  margin-top: 80%;
+}
+
+.choose img {
+  width: 90px;
+  margin: 2px 0px;
+}

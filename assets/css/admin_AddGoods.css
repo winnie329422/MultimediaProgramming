@@ -1,0 +1,37 @@
+table {
+  width: 60%;
+  margin-top: 50px;
+  border: solid 2px rgba(0, 0, 0, 0.404);
+}
+
+th,
+td,
+tr {
+  text-align: center;
+  font-size: 18px;
+  vertical-align: middle;
+  text-align: left;
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(255, 221, 212);
+}
+
+tr:nth-child(even) {
+  background-color: rgb(255, 241, 238);
+}
+
+.choose img {
+  width: 90px;
+  margin: 2px 0px;
+}
+
+input[type=submit] {
+  margin-top: 20px;
+  padding: 8px 30px;
+  font-size: 15px;
+}
+
+input[type=submit]:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,87 @@
+.mainHost {
+  margin-top: 2%;
+  display: inline-block;
+  width: 83%;
+  max-width: 1500px;
+  height: auto;
+  padding: 10px 50px 30px 50px;
+  /* background-color: rgb(245, 245, 245); */
+  /* box-shadow: 1px 2px 3px rgba(143, 143, 143, 0.5); */
+}
+
+.mainHost h1 {
+  width: 100%;
+  height: 50px;
+  display: inline-block;
+  text-align: left;
+  font-size: 28px;
+  letter-spacing: 5px;
+  border-bottom-style: solid;
+  border-width: 4px;
+  border-color: #BDA589;
+  line-height: 50px;
+}
+
+/* 如果要做RWD 小於某個尺寸後，改成display: inline-block;*/
+.LotOfGood {
+  margin-top: 20px;
+  display: flex;
+  /* display: inline-block; */
+  width: 100%;
+}
+
+.Agood {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  padding: 2% 2.5%;
+}
+
+.sameHeight {
+  /* width: 100%;
+  max-height: 300px; */
+  width: 250px;
+  height: 250px;
+  line-height: 250px;
+  border: rgb(235, 235, 235) 2px solid;
+}
+
+.Agood:hover {
+  background-color: rgb(247, 247, 247);
+  cursor: pointer;
+}
+
+/* .Agood:nth-child(even) {
+  margin-left: 5px;
+}
+
+.Agood:nth-child(3) {
+  margin-left: 5px;
+} */
+
+
+.Agood h2 {
+  font-size: 15px;
+  width: auto;
+  /* height: 50px; */
+  display: inline-block;
+  text-align: left;
+  letter-spacing: 3px;
+  /* border-bottom-style: solid; */
+  /* border-width: 3px; */
+  /* border-color: #BDA589; */
+  line-height: 30px;
+  padding: 10px;
+  /* padding-bottom: 5px; */
+  margin: 0px;
+}
+
+.Agood p {
+  /* padding: 10px; */
+  padding-left: 10px;
+  margin: 0px;
+  color: #4980a3;
+}

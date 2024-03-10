@@ -1,0 +1,447 @@
+.member {
+  display: inline-block;
+  width: 70%;
+  height: auto;
+  margin-left: 1%;
+  vertical-align: top;
+  margin-top: 2%;
+  padding: 10px 50px 30px 50px;
+  background-color: rgb(245, 245, 245);
+  box-shadow: 1px 2px 3px rgba(143, 143, 143, 0.5);
+}
+
+.M {
+  width: 100%;
+  height: auto;
+}
+
+.mb1 {
+  width: 100%;
+  height: 50px;
+  display: inline-block;
+  text-align: left;
+  font-size: 28px;
+  letter-spacing: 5px;
+  border-bottom-style: solid;
+  border-width: 4px;
+  border-color: #BDA589;
+  line-height: 50px;
+}
+
+.asd {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.asd button {
+  display: inline-block;
+  background-color: #eea825;
+  border-radius: 2px;
+  font-size: 15px;
+  color: #f0f0f0;
+  text-align: center;
+  padding: 5px 10px;
+  margin-left: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  display: none;
+}
+
+.mm_but01 {
+  background-color: #eea825;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #f0f0f0;
+  text-align: center;
+  width: 300px;
+  height: 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-top: 3%;
+}
+
+.mm_but01:hover {
+  opacity: 0.8;
+  /* background-color: #87b1c4; */
+  color: whitesmoke;
+  border: none;
+}
+
+/* .MM input [type="radio"], */
+.MM input[type="date"] {
+  width: 80%;
+  height: 90%;
+  border-radius: 0px;
+  border-bottom-style: solid;
+  border-width: 0px;
+  border-bottom-width: 2px;
+  border-color: #BDA589;
+  padding: 0px 15px;
+  font-size: 17px;
+  display: inline-block;
+  background-color: rgb(245, 245, 245);
+}
+
+.MM input[type="text"],
+.MM input[type="email"],
+.MM input[type="tel"],
+.MM input[type="password"] {
+  height: 90%;
+  border-radius: 0px;
+  border-bottom-style: solid;
+  border-width: 0px;
+  border-bottom-width: 2px;
+  border-color: #BDA589;
+  font-size: 17px;
+  display: inline-block;
+  background-color: rgb(245, 245, 245);
+}
+
+.M-name {
+  width: 50%;
+  height: 50px;
+  display: inline-block;
+  margin-top: 50px;
+  font-size: 17px;
+  line-height: 50px;
+}
+
+.M-name input[type="text"] {
+  width: 80%;
+  display: inline-block;
+}
+
+.M-gender {
+  width: 49%;
+  height: 50px;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 50px;
+  margin-top: 50px;
+}
+
+.gg {
+  display: flex;
+}
+
+.gen {
+  width: 81%;
+  border-bottom: BDA589 2px solid;
+  margin-left: 1%;
+}
+
+.M-phone {
+  width: 50%;
+  height: 50px;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 50px;
+  margin-top: 50px;
+}
+
+.M-phone input[type="text"] {
+  width: 80%;
+  display: inline-block;
+}
+
+.M-Email {
+  width: 100%;
+  height: 50px;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 50px;
+  margin-top: 50px;
+}
+
+.M-Email input[type="email"] {
+  width: 80%;
+}
+
+.M-address {
+  width: 100%;
+  height: 50px;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 50px;
+  margin-top: 50px;
+}
+
+.M-address input[type="text"] {
+  width: 90%;
+}
+
+.M-password {
+  width: 50%;
+  height: 50px;
+  display: none;
+  margin-top: 50px;
+  font-size: 17px;
+  line-height: 50px;
+}
+
+/* 
+.seePass {
+  width: 40%;
+  display: inline-block;
+} */
+
+.M-birth {
+  width: 49%;
+  height: 50px;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 50px;
+  margin-top: 50px;
+}
+
+.M-password input[type="password"] {
+  width: 60%;
+  display: inline-block;
+  margin: 0px 20px 0px 10px;
+}
+
+.M-password input[type="text"] {
+  width: 60%;
+  display: inline-block;
+  margin: 0px 20px 0px 10px;
+}
+
+.seePass {
+  font-size: 18px;
+}
+
+.seePass input[type="checkbox"] {
+  /* -webkit-appearance: none; */
+  vertical-align: middle;
+  margin-top: 0;
+  background: #fff;
+  border: #999 solid 1px;
+  border-radius: 3px;
+  min-height: 20px;
+  min-width: 20px;
+}
+
+/* .seePass input[type="checkbox"]:checked {
+  background: #3190e8;
+}
+
+.seePass input[type=checkbox]:checked::after {
+  content: '';
+  top: 3px;
+  left: 3px;
+  position: absolute;
+  background: transparent;
+  border: #fff solid 2px;
+  border-top: none;
+  border-right: none;
+  height: 6px;
+  width: 10px;
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+} */
+
+.AnOrder {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: tan 2px solid; */
+}
+
+
+.orderEntity {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  height: auto;
+  padding: 10px 35px;
+  background-color: rgb(238, 206, 165);
+  border: tan 3px solid;
+}
+
+.orderEntity p {
+  font-size: 18px;
+}
+
+.orderEntityButton {
+  width: auto;
+  padding: 8px 12px;
+  /* border: none; */
+  border: rgb(235, 193, 117) solid 1px;
+  cursor: pointer;
+  background-color: #c26f55;
+  border-radius: 2px;
+  font-size: 18px;
+  color: #e2e0e0;
+  text-align: center;
+}
+
+/* 未連結 */
+.orderEntity a:link {
+  color: #000000;
+}
+
+/* 已連結 */
+.orderEntity a:visited {
+  color: #FF0000;
+}
+
+/* 滑鼠移至連結 */
+.orderEntity a:hover {
+  color: #ff6600;
+}
+
+/* 選擇連結 */
+.orderEntity a:active {
+  color: #fdba54;
+}
+
+.orderEntityButton:hover {
+  /* opacity: 0.85; */
+  border: none;
+  /* background-color: #dee14b; */
+  /* color: #bb5333; */
+  background-color: #c07f6b;
+  color: #e2e0e0;
+}
+
+.orderItems {
+  font-size: 18px;
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 35px;
+  border-bottom: tan 1px solid;
+  border-left: tan 3px solid;
+  border-right: tan 3px solid;
+  /* margin-bottom: 10px; */
+}
+
+.orderPrice {
+  border-top: tan 2px solid;
+  border-bottom: tan 3px solid;
+  border-left: tan 3px solid;
+  border-right: tan 3px solid;
+  font-size: 18px;
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 35px;
+}
+
+.NoComments {
+  /* display: inline-block; */
+  margin: 2% 10% 0% 10%;
+  width: 80%;
+}
+
+.ForComments {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.AComment {
+  font-size: 18px;
+  width: 70%;
+  display: flex;
+  /* justify-content: center; */
+  padding: 35px 50px;
+  margin-top: 10px;
+  /* border-bottom: tan 1px solid;
+  border-left: tan 3px solid;
+  border-right: tan 3px solid; */
+  background-color: rgb(238, 206, 165);
+}
+
+.CommentsImg {
+  width: 25%
+}
+
+.CommentsWord {
+  margin-left: 10%;
+}
+
+.CommentsWord p:nth-child(1) {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.CommentsWord p:nth-child(3) {
+  font-size: 17px;
+  /* font-weight: bold; */
+}
+
+/* 訂單細節css(order)開始囉 */
+
+.orderman {
+  font-size: 18px;
+  width: 85%;
+  display: flex;
+  justify-content: left;
+  padding: 10px 35px;
+  border-bottom: tan 1px solid;
+  border-left: tan 3px solid;
+  border-right: tan 3px solid;
+  /* margin-bottom: 10px; */
+}
+
+.orderpeople {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.orderthing {
+  width: 100%;
+  margin-top: 20px;
+  /* margin-top: 20px; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.opi {
+  width: 15%;
+  display: flex;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 22px;
+}
+
+.dinner {
+  display: flex;
+  justify-content: left;
+}
+
+.wow {
+  font-weight: bolder;
+  font-size: 28px;
+}
+
+.wii {
+  display: flex;
+  align-items: center;
+}
+
+.AnOrderDetail {
+  min-height: 645px;
+  max-width: 1500px;
+  width: 85%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: tan 2px solid; */
+}

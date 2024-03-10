@@ -1,0 +1,120 @@
+/* rating是固定不動的 
+effect用於給評論
+商品頁面的評論只需要用rating*/
+
+.rating {
+  /* cursor: pointer; */
+  display: flex;
+  align-items: center;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  font-size: 0;
+}
+
+.rating label.stars::before,
+.rating label.hearts::before {
+  content: '';
+  display: block;
+  width: 35px;
+  height: 35px;
+  /* cursor: pointer; rating不用*/
+}
+
+/* Hover effect */
+.rating.effect input:checked+label~label.stars::before,
+.rating.effect:hover input:hover+label~label.stars::before {
+  background: url(../images/star0.png) no-repeat center center;
+  background-size: 35px;
+  opacity: .3;
+}
+
+.rating.effect:hover input+label~label.stars::before {
+  background: url(../images/star1.png) no-repeat center center;
+  background-size: 35px;
+}
+
+.rating.effect input:checked+label~label.hearts::before,
+.rating.effect:hover input:hover+label~label.hearts::before {
+  background: url(../images/star0.png) no-repeat center center;
+  background-size: 35px;
+  opacity: .3;
+}
+
+.rating.effect:hover input+label~label.hearts::before {
+  background: url(../images/star1.png) no-repeat center center;
+  background-size: 35px;
+}
+
+.rating label.stars::before {
+  background: url(../images/star1.png) no-repeat center center;
+  background-size: 35px;
+}
+
+.rating label.hearts::before {
+  background: url(../images/star1.png) no-repeat center center;
+  background-size: 35px;
+}
+
+/* 商品評論表單用 */
+.rate {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.rate input {
+  display: none;
+}
+
+.rate label {
+  font-size: 0;
+}
+
+.rate label.stars::before,
+.rate label.hearts::before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+/* Hover effect */
+.rate.effecting input:checked+label~label.stars::before,
+.rate.effecting:hover input:hover+label~label.stars::before {
+  background: url(../images/star0.png) no-repeat center center;
+  background-size: 40px;
+  opacity: .3;
+}
+
+.rate.effecting:hover input+label~label.stars::before {
+  background: url(../images/star1.png) no-repeat center center;
+  background-size: 40px;
+}
+
+.rate.effecting input:checked+label~label.hearts::before,
+.rate.effecting:hover input:hover+label~label.hearts::before {
+  background: url(../images/star0.png) no-repeat center center;
+  background-size: 40px;
+  opacity: .3;
+}
+
+.rate.effecting:hover input+label~label.hearts::before {
+  background: url(../images/star1.png) no-repeat center center;
+  background-size: 40px;
+}
+
+.rate label.stars::before {
+  background: url(../images/star1.png) no-repeat center center;
+  background-size: 40px;
+}
+
+.rate label.hearts::before {
+  background: url(../images/star1.png) no-repeat center center;
+  background-size: 40px;
+}

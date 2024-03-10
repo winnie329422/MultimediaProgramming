@@ -1,0 +1,340 @@
+body {
+  font-family: Arial;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container/goodslide (needed to position the left and right arrows) */
+.goodslide {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(102, 102, 102, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  margin: 0px 20px;
+  justify-content: center;
+  align-items: center;
+  border: rgb(230, 230, 230) 1px solid;
+  background-color: rgb(230, 230, 230);
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.goodTop {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.goodpic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: rgb(230, 230, 230) 1px solid;
+  background-color: rgb(248, 248, 248);
+  width: 600px;
+  height: 600px;
+}
+
+.goodDetail {
+  width: 45%;
+  max-width: 800px;
+  padding: 80px 10px 0px 0px;
+}
+
+.goodDetail h1 {
+  font-size: 37px;
+}
+
+.goodDetail h2 {
+  color: #024a77;
+  font-size: 32px;
+}
+
+.goodDetail h3 {
+  font-size: 20px;
+}
+
+.goodDetail select {
+  padding: 10px 28px;
+  font-size: 16px;
+  display: inline-block;
+  width: 20%;
+}
+
+.goodDetail p {
+  font-size: 18px;
+  display: inline-block;
+  width: 90%;
+}
+
+.goodDetail hr {
+  width: 90%;
+  display: inline-block;
+  margin-top: 35px;
+}
+
+.goodDetail h4 {
+  font-size: 22px;
+}
+
+.goodDetail input[type="submit"] {
+  display: inline-block;
+  width: 90%;
+  padding: 12px 0px;
+  margin-top: 15px;
+  font-size: 20px;
+  background-color: #4980a3;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+
+.goodDetail input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+.goodQuanIntro {
+  width: 90%;
+}
+
+.goodQuanIntro p:nth-child(odd) {
+  display: inline-block;
+  width: 20%;
+  color: #222;
+}
+
+.goodQuanIntro p:nth-child(even) {
+  display: inline-block;
+  width: 75%;
+  color: #222;
+  vertical-align: top;
+}
+
+.goodComment {
+  display: inline-block;
+  width: 75%;
+  max-width: 1200px;
+  height: auto;
+  padding: 10px 50px 30px 50px;
+  background-color: rgb(245, 245, 245);
+  box-shadow: 1px 2px 3px rgba(143, 143, 143, 0.5);
+}
+
+.goodCommentTitle {
+  width: 100%;
+  height: 50px;
+  display: inline-block;
+  border-bottom-style: solid;
+  border-width: 4px;
+  border-color: #BDA589;
+  padding-bottom: 20px;
+}
+
+.goodCommentTitle h1 {
+  display: inline-block;
+  font-size: 28px;
+  letter-spacing: 5px;
+  text-align: left;
+  line-height: 50px;
+}
+
+.goodCommentTitle button {
+  padding: 10px 10px 8px 10px;
+  font-size: 18px;
+  margin-left: 20px;
+  color: whitesmoke;
+  border: none;
+  background-color: #eea825;
+  opacity: 0.9;
+}
+
+.goodCommentTitle button:hover {
+  opacity: 1;
+  /* background-color: #87b1c4; */
+  cursor: pointer;
+  color: #f0f0f0;
+  border: 1px solid rgb(133, 133, 133);
+}
+
+.customerComment {
+  margin-left: 5px;
+  margin-top: 20px;
+  display: inline-block;
+  width: 85%;
+  height: auto;
+  padding: 10px 50px;
+  background-color: rgb(238, 206, 165);
+  border-bottom: tan 1px solid;
+  border-right: tan 1px solid;
+}
+
+.customerComment p:nth-child(odd) {
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.customerComment p:nth-child(even) {
+  font-size: 18px;
+  display: inline-block;
+}
+
+.NameStar {
+  display: flex;
+}
+
+.NameStar div {
+  margin-left: 30px;
+}
+
+/* 商品評論表單 */
+.Comment-content {
+  background-color: #FEF5D4;
+  margin: 1% auto 15% auto;
+  border: 1px solid #888;
+  width: 30%;
+  max-width: 500px;
+  border-radius: 5px;
+  padding-left: 15px;
+  /* display: flex;
+  justify-content: center; */
+}
+
+.rate {
+  margin-left: 12%;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.Comment-content textarea {
+  margin-left: 12%;
+  width: 70%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 10px 10px;
+  font-size: 15px;
+}
+
+.Comment-content button:nth-child(odd) {
+  /* background-color: #87b1c4; */
+  background-color: #ff5555;
+
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 5px;
+  border: none;
+  cursor: pointer;
+  width: 45%;
+  border-radius: 3px;
+  font-size: 20px;
+}
+
+.Comment-content button:nth-child(even) {
+  /* background-color: #87b1c4; */
+  background-color: #5d7bff;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 5px;
+  border: none;
+  cursor: pointer;
+  width: 45%;
+  border-radius: 3px;
+  font-size: 20px;
+}
+
+.Nonono img {
+  width: 70%;
+}
+
+.Nonono {
+  width: 100%;
+  margin-top: 20px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}

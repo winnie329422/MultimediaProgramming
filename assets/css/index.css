@@ -1,0 +1,315 @@
+.mySlides {
+  display: none
+}
+
+.wid {
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 80%;
+  padding-top: 20px;
+  max-width: 1300px;
+  /* max-width: 1000px; */
+  position: relative;
+  /* margin: auto; */
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(255, 255, 255, 0.493);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.ali {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.act,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+  .prev,
+  .next,
+  .text {
+    font-size: 11px
+  }
+}
+
+/* 熱門商品的標題 */
+.hotGoods {
+  margin-top: 2%;
+  display: inline-block;
+  width: 100%;
+  max-width: 1500px;
+  height: auto;
+  padding: 10px 50px 30px 50px;
+}
+
+.hotGoods h1 {
+  width: 80%;
+  height: 30px;
+  display: inline-block;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 5px;
+  border-top-style: solid;
+  border-width: 4px;
+  border-color: #BDA589;
+  line-height: 30px;
+  padding: 20px 10px;
+}
+
+/* 熱門商品的手手 */
+.top {
+  width: 50px;
+  height: 50px;
+  /* margin-top: -15px; */
+  margin: -15px 10px;
+}
+
+#top1 {
+  margin-right: 15px;
+}
+
+/* 熱門商品的內容 命名跟allgoods一樣，小心不要打架了*/
+.LotOfGood {
+  /* margin-top: 20px; */
+  display: flex;
+  justify-content: center;
+  /* display: inline-block; */
+  width: 100%;
+  align-items: flex-end;
+}
+
+.sameHeight {
+  /* width: 100%;
+  max-height: 300px; */
+  width: 250px;
+  height: 250px;
+  line-height: 250px;
+  /* border: rgb(235, 235, 235) 2px solid; */
+}
+
+.Agood {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.LotOfGood div:nth-child(even) {
+  padding: 0% 2.5%;
+}
+
+.Agood:hover {
+  cursor: pointer;
+}
+
+.LotOfGood div:nth-child(odd):hover span {
+  opacity: 0.8;
+}
+
+.LotOfGood div:nth-child(odd):hover .img-box img {
+  transform: scale(1.2);
+}
+
+.LotOfGood div:nth-child(odd):hover .info-box {
+  transform: scaleY(1);
+}
+
+.LotOfGood div:nth-child(even):hover span {
+  background-color: rgb(87, 164, 252);
+  z-index: 3;
+}
+
+.LotOfGood div:nth-child(even):hover .img-box img {
+  transform: scale(1.2);
+}
+
+.LotOfGood div:nth-child(even):hover .info-box {
+  transform: scaleY(1);
+}
+
+.No1 {
+  width: 290px;
+  height: 180px;
+  background-color: rgb(52, 127, 214);
+  z-index: 3;
+  text-align: center;
+  font-size: 50px;
+}
+
+.No1 img {
+  margin-top: 10px;
+  width: 180px;
+}
+
+.No2 {
+  width: 290px;
+  height: 130px;
+  background-color: rgb(245, 50, 89);
+  z-index: 2;
+  text-align: center;
+  font-size: 50px;
+}
+
+.No2 img {
+  margin-top: -5px;
+  width: 150px;
+}
+
+.No3 {
+  width: 290px;
+  height: 100px;
+  background-color: rgb(255, 187, 0);
+  z-index: -1;
+  text-align: center;
+  font-size: 50px;
+}
+
+.No3 img {
+  margin-top: -20px;
+  width: 150px;
+}
+
+.hover-box {
+  width: 250px;
+  height: 250px;
+  /* max-height: 200px; */
+  margin: auto;
+  /* background: #4d674a; */
+  box-sizing: border-box;
+  position: relative;
+}
+
+.hover-box .img-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.hover-box .img-box img {
+  margin: auto;
+  transition: transform 0.5s;
+}
+
+.hover-box .info-box {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  bottom: 10px;
+  right: 10px;
+  color: rgb(250, 250, 250);
+  background: rgba(78, 78, 78, 0.6);
+  text-align: center;
+  transform: scaleY(0);
+  transition: transform .5s;
+}
+
+.hover-box .info-box .info-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 15px;
+}
+
+.con {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+}
